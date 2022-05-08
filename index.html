@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/calc/style/style.css"/>
+    <title>Document</title>
+   
+</head>
+<body>
+  <div class="calcu">
+  <h1>Калькулятор</h1>
+  <!-- поле ввода первого числа -->
+<input id="num1" />
+
+<!-- блок с кнопками -->
+<div class="operator_btns">
+  <button id="plus" onclick="op='+'">+</button>
+  <button id="minus" onclick="op='-'">-</button>
+  <button id="times" onclick="op='*'">x</button>
+  <button id="divide" onclick="op='/'">:</button>
+</div>
+
+<!-- поле ввода второго числа -->
+<input id="num2" />
+<br>
+<div></div>
+<!-- кнопка для расчётов -->
+<button onclick="func()">Посчитать</button>
+
+<!-- здесь будет результат -->
+<p id="result"></p>
+<div><br><br></div>
+<button id="clear" onclick="Clear()">Очистить</button>
+</div>
+
+
+<script src="/calc/script.js"></script>
+</body>
+</html>
